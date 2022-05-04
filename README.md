@@ -6,6 +6,7 @@ Supports:
  * Make Snake Case - this_is_fun
  * Make Kebab Case - this-is-fun
 
+![](https://github.com/drouchy/nova-case-transformation/blob/main/screenshot.png?raw=true)
 
 ## Usage
 

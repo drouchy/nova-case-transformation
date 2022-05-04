@@ -3,7 +3,7 @@
     "name": "Case Transformation",
     "organization": "Rouchy",
     "description": "Change the case of the selected text - supports Camel, Snake and Keba Case",
-    "version": "1.0",
+    "version": "1.1",
     "categories": ["commands"],
     
     "repository": "https://github.com/drouchy/nova-case-transformation",
