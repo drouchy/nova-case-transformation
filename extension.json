@@ -1,0 +1,38 @@
+{
+    "identifier": "dev.rouchy.CaseTransformation",
+    "name": "Case Transformation",
+    "organization": "Rouchy",
+    "description": "Change case of selected text",
+    "version": "1.0",
+    "categories": ["commands"],
+    
+    "main": "main.js",
+    
+    "activationEvents": [
+        "onLanguage:html"
+    ],
+    
+    "entitlements": {
+        "clipboard": true
+    },
+    
+    "commands": {
+        "editor": [
+            {
+                "title": "Camel Case",
+                "command": "case-transformation.camelCase"
+            },
+            {
+                "title": "Snake Case",
+                "command": "case-transformation.snakeCase"
+            },
+            {
+                "title": "Kebab Case",
+                "command": "case-transformation.kebabCase"
+            }
+        ]
+    },
+    
+    "config": [
+    ]
+}
