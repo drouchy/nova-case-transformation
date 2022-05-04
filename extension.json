@@ -2,33 +2,39 @@
     "identifier": "dev.rouchy.CaseTransformation",
     "name": "Case Transformation",
     "organization": "Rouchy",
-    "description": "Change case of selected text",
+    "description": "Change the case of the selected text - supports Camel, Snake and Keba Case",
     "version": "1.0",
     "categories": ["commands"],
+    
+    "repository": "https://github.com/drouchy/nova-case-transformation",
+    "bugs": "https://github.com/drouchy/nova-case-transformation/issues",
     
     "main": "main.js",
     
     "activationEvents": [
-        "onLanguage:html"
+        "onLanguage:*"
     ],
     
     "entitlements": {
-        "clipboard": true
+        
     },
     
     "commands": {
         "editor": [
             {
-                "title": "Camel Case",
-                "command": "case-transformation.camelCase"
+                "title": "Make Camel Case",
+                "command": "case-transformation.camelCase",
+                "when": "editorHasFocus"
             },
             {
-                "title": "Snake Case",
-                "command": "case-transformation.snakeCase"
+                "title": "Make Snake Case",
+                "command": "case-transformation.snakeCase",
+                "when": "editorHasFocus"
             },
             {
-                "title": "Kebab Case",
-                "command": "case-transformation.kebabCase"
+                "title": "Make Kebab Case",
+                "command": "case-transformation.kebabCase",
+                "when": "editorHasFocus"
             }
         ]
     },
